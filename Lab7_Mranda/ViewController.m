@@ -7,21 +7,50 @@
 //
 
 #import "ViewController.h"
-
+#import "SecondViewController.h"
 @interface ViewController ()
+
 
 @end
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    // copy data from main View Controller
+    //self.firstLabel.text = ((SecondViewController *)self.presentedViewController).secondTextField.text;
+  
+
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+// exit method
+-(IBAction)myExit:(UIStoryboardSegue *)sender
+{
+    
+}
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    // create pointers to the VCs
+    ViewController *startingVC;
+    SecondViewController *secondVC;
+    
+    // get the VCs
+    startingVC = (ViewController *)segue.sourceViewController;
+    secondVC = (SecondViewController *)segue.destinationViewController;
+}
+
+
+- (IBAction)hideKeyboard:(id)sender //hide the keyboard 
+{
+    [self.firstTextField resignFirstResponder];
+}
 @end

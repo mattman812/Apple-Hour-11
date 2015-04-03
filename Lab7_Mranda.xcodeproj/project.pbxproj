@@ -14,6 +14,7 @@
 		90EA8FB81ACE3AD3002DA846 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90EA8FB71ACE3AD3002DA846 /* Images.xcassets */; };
 		90EA8FBB1ACE3AD3002DA846 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90EA8FB91ACE3AD3002DA846 /* LaunchScreen.xib */; };
 		90EA8FC71ACE3AD3002DA846 /* Lab7_MrandaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EA8FC61ACE3AD3002DA846 /* Lab7_MrandaTests.m */; };
+		90EA8FD91ACE4257002DA846 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EA8FD81ACE4257002DA846 /* SecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		90EA8FC01ACE3AD3002DA846 /* Lab7_MrandaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Lab7_MrandaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		90EA8FC51ACE3AD3002DA846 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90EA8FC61ACE3AD3002DA846 /* Lab7_MrandaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Lab7_MrandaTests.m; sourceTree = "<group>"; };
+		90EA8FD71ACE4257002DA846 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		90EA8FD81ACE4257002DA846 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				90EA8FAF1ACE3AD3002DA846 /* AppDelegate.m */,
 				90EA8FB11ACE3AD3002DA846 /* ViewController.h */,
 				90EA8FB21ACE3AD3002DA846 /* ViewController.m */,
+				90EA8FD71ACE4257002DA846 /* SecondViewController.h */,
+				90EA8FD81ACE4257002DA846 /* SecondViewController.m */,
 				90EA8FB41ACE3AD3002DA846 /* Main.storyboard */,
 				90EA8FB71ACE3AD3002DA846 /* Images.xcassets */,
 				90EA8FB91ACE3AD3002DA846 /* LaunchScreen.xib */,
@@ -219,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90EA8FD91ACE4257002DA846 /* SecondViewController.m in Sources */,
 				90EA8FB31ACE3AD3002DA846 /* ViewController.m in Sources */,
 				90EA8FB01ACE3AD3002DA846 /* AppDelegate.m in Sources */,
 				90EA8FAD1ACE3AD3002DA846 /* main.m in Sources */,
@@ -297,7 +303,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -333,7 +339,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -346,8 +352,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Lab7_Mranda/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -356,8 +364,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Lab7_Mranda/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

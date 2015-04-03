@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
-
-
+@property (weak, nonatomic) IBOutlet UITextField *firstTextField;
+@property (weak, nonatomic) IBOutlet UILabel *firstLabel;
+- (IBAction)hideKeyboard:(id)sender;
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender;
 @end
 
