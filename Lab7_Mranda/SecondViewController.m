@@ -25,6 +25,18 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    // create pointers to the VCs
+    ViewController *secondVC;
+    SecondViewController *startingVC;
+    
+    // get the VCs
+    startingVC  = (SecondViewController *)segue.sourceViewController;
+     secondVC = (ViewController *)segue.destinationViewController;
+    
+    secondVC.firstLabel.text = startingVC.secondTextField.text;
+}
 
 
 

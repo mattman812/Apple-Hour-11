@@ -37,16 +37,6 @@
     
 }
 
--(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // create pointers to the VCs
-    ViewController *startingVC;
-    SecondViewController *secondVC;
-    
-    // get the VCs
-    startingVC = (ViewController *)segue.sourceViewController;
-    secondVC = (SecondViewController *)segue.destinationViewController;
-}
 
 
 - (IBAction)hideKeyboard:(id)sender //hide the keyboard 
